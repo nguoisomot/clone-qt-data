@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>REGISTER</h2>
+  <div class="contaier-register">
+    <div class="container-form">
+      <form action="/register" method="POST" class="register-form" id="form_register">
+        <label for="fullName">Full Name</label>
+        <input type="text" name="fullName" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+        <label for="username">Username</label>
+        <input type="text" name="username" required>
+        <label for="address">Address</label>
+        <input type="text" name="address" required>
+        <label for="gender">Gender</label>
+        <input type="text" name="Gender" required>
+        <label for="birthday">Gender</label>
+        <input type="date" name="birthday" required>
+        <input type="submit" value="Register">
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  var form = document.getElementById("form_register");
+    function handleForm(event) { event.preventDefault(); }
+    form.addEventListener('submit', handleForm);
+</script>
+</html>
