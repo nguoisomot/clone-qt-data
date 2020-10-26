@@ -45,6 +45,15 @@ app.get('/consumer_lending', function (req, res) {
 app.get('/registerUser',function(req,res){
   res.render('pages/register');
 })
+app.get('/qt-community',function(req,res){
+  res.render('pages/qt-community');
+})
+app.get('/sale-ota',function(req,res){
+  res.render('pages/sale-ota');
+})
+app.get('/tri_tue',function(req,res){
+  res.render('pages/tri_tue');
+})
 //handle data
 
 require('./app/routers/user.router')(app);

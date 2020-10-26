@@ -1,5 +1,6 @@
-window.onscroll = function () { myFunction(); myFunction2(); myFunction3(); myFunction4() };
-//  1
+window.onscroll = function () { myFunction(); myFunction2(); myFunction3(); myFunction4(); myFunction5();
+  myFunction6(); myFunction7(); myFunction8() };
+//  1;
 var header = document.getElementById("row_1_img");
 var sticky = header.offsetTop-500;
 console.log(sticky)
@@ -39,6 +40,43 @@ function myFunction4() {
     header_2.classList.add("row_1_img");
   }
 }
+//5
+var row_1_right_3 = document.getElementById("row_3");
+var show_row_1_right_3 = row_1_right_3.offsetTop - row_1_right_3.offsetHeight - 150;
+console.log(show_row_1_right_3)
 
+function myFunction5() {
+  if (window.pageYOffset > show_row_1_right_3) {
+    row_1_right_3.classList.add("row_1-right_show");
+  }
+}
+//6
+var header_3 = document.getElementById("row_1_img_3");
+var sticky_3 = header_3.offsetTop - header_3.offsetHeight - 150;
+
+function myFunction6() {
+  if (window.pageYOffset > sticky_3) {
+    header_3.classList.add("row_1_img");
+  }
+}
+//7
+var row_1_right_4 = document.getElementById("row_4");
+var show_row_1_right_4 = row_1_right_4.offsetTop - row_1_right_4.offsetHeight - 150;
+console.log(show_row_1_right_4)
+
+function myFunction7() {
+  if (window.pageYOffset > show_row_1_right_4) {
+    row_1_right_4.classList.add("row_1-right_show");
+  }
+}
+//8
+var header_5 = document.getElementById("row_1_img_4");
+var sticky_5 = header_5.offsetTop - header_5.offsetHeight - 150;
+
+function myFunction8() {
+  if (window.pageYOffset > sticky_3) {
+    header_5.classList.add("row_1_img");
+  }
+}
 
 

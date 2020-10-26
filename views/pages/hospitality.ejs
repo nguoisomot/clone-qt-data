@@ -4,97 +4,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/hospitality_css.css" />
-  <script src="/css/uikit.min.css"></script>
-  <script src="/js/uikit-icons.min.js"></script>
-  <script src="/js/uikit.min.js"></script>
-  <title>Hospitality</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/hospitality.css">
 </head>
 
 <body>
-        <%- include('../partials/navigation'); %>
-
-  <div class="header" uk-grid>
-    <div class="uk-width-4-5 uk-margin-auto" uk-grid>
-      <div class="tile uk-width-1-3">
-        <h3><b>Hospitality</b></h3>
-      </div>
-      <div class="menu uk-width-2-3 uk-text-right">
-        <a>Home</a><span>/</span><a>Hospitality</a>
-      </div>
+  <%- include('../partials/navigation'); %>
+  <section class="consumer_header">
+    <div class="consumer_header-title">
+      <p class="white_so">
+        <a href="" style="text-decoration: none;" class="white black_bit">Home</a>
+        <span> / </span>
+        Consumer Lending & Mortgage
+      </p>
     </div>
-  </div>
-  <div class="section" uk-grid>
-    <div class="uk-margin-auto uk-width-4-5 text-top1">
-      <div class="uk-text-center">
-        <h1><b>AI-Powered Operation<br /> Management System</b></h1>
-        <h4><b>An automated system, save your costs and boost your revenue.</b></h4>
-        <p>
-          Easy to use functions. Interactive reports. Create efficiency. Manage your staff
-          productivity.<br />
-          In-depth investigate your revenue opportunity and manage your operation costs at the
-          departmentlevel.
-        </p>
-        <button id="">Request A Demo</button>
-      </div>
-      <div class="aaa">
-        <div class="uk-child-width-1-2@s" uk-grid>
-          <div class=" animation-left1">
-            <Img src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_001.jpg" />
-          </div>
-          <div class="text-top2  animation-right1">
-            <h3 class="uk-card-title">Revenue Management</h3>
-            <p>Based on that, you can make the right pricing strategy, well-prepared Feeding our forecasting
-              algorithms with high-level trending techniques, we confidently bring you the highest
-              accuracy you ever reach before, and we believe it will benefit your business far beyond your
-              imagination, from the pricing strategy to the cost-effective plans in your operation
-              management.</p>
-            <p>Besides that, you will love our feature: Multiple Revenue-Generating Factors Detection, which
-              helps you to make the best plan for your revenue strategy.</p>
-          </div>
+  </section>
+  <section class="content_body">
+
+    <div class="consumer_intro">
+      <h1 class="consumer_title_h1">Personal Loan & Mortgage Loan</h1>
+      <h5 style="font-size: 20px;margin-bottom: 10px;">Re-pricing personal & mortgage loan. Minimizing your risk and
+        optimizing your return.
+      </h5>
+      <p>Applying Machine Learning techniques combine with RAROC approach, we provide the decision of cancelling a loan
+        or making
+        the adjustment on terms of a loan to get the accepted risk vs return level.
+      </p>
+      <a href="">Request A Demo</a>
+    </div>
+
+    <div class="consumer_content_details">
+      <div class="row_1">
+        <div id="row_1_img" class="row_1_img_hidden"> <img width="100%" height="100%"
+            src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_001.jpg"
+            alt="">
         </div>
-        <div class="uk-child-width-1-2@s" uk-grid>
-          <div class="text-top2 animation-left2">
-            <h3 class="uk-card-title">Labor Management</h3>
-            <p>Centralize and streamline your labor cost management job with the lesser your effort but
-              better your staff productivity performance.</p>
-            <p>The function completely supports operation managers in order to achieve the cost target.
-              Estimating workload demand will be done automatically for a specific day in the future, then
-              the actionable decisions will be suggested based on your financial targets.</p>
-          </div>
-          <div class="animation-right2">
-            <Img src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_002.jpg" />
-          </div>
+
+        <div class="row_1-right" id="row_1">
+          <h2 style="margin-bottom: 25px;font: normal 24px 'Manjari',
+  Helvetca,
+  Arial,
+  sans-serif;">Revenue Management</h2>
+          <ul style="list-style: none;">
+            <li style="padding-bottom: 15px;">Based on that, you can make the right pricing strategy, well-prepared Feeding our forecasting algorithms with high-level
+            trending techniques, we confidently bring you the highest accuracy you ever reach before, and we believe it will benefit
+            your business far beyond your imagination, from the pricing strategy to the cost-effective plans in your operation
+            management.</li>
+            <li>Besides that, you will love our feature: Multiple Revenue-Generating Factors Detection, which helps you to make the best
+            plan for your revenue strategy.</li>
+          </ul>
         </div>
-        <div class="uk-child-width-1-2@s" uk-grid>
-          <div class=" animation-left3">
-            <Img src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_003.jpg" />
-          </div>
-          <div class=" text-top2 animation-right3">
-            <h3 class="uk-card-title">Food Cost Management</h3>
-            <p>There is no doubt that food cost control is a significant priority for any food and beverage
-              operation. By using cost-control technology, F&B managers can achieve the food cost target
-              with minimal effort.</p>
-            <p>The system provides real-time monitoring and automatic recommendation in action with respect
-              to fluctuate daily demand. Our use cases shows that food cost has dropped more than 300,000$
-              after 12 months implementation.</p>
-          </div>
-        </div>
-        <div class="uk-child-width-1-2@s" uk-grid>
-          <div class=" text-top2 animation-left4">
-            <h3 class="uk-card-title">Hotel Quality Management</h3>
-            <p>Leverage data from OTA reviews and hotel available data, this function identifies the
-              hotel’s issues and provides actions based on what-if scenarios analysis to manage Guest
-              Experiences, Hotel Quality & Reputation.</p>
-          </div>
-          <div class=" animation-right4">
-            <Img src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_004.jpg" />
-          </div>
-        </div>
+
       </div>
 
     </div>
-  </div>
+
+    <div class="consumer_content_details">
+      <div class="row_1">
+        <div class="row_1-right" id="row_2">
+          <h2 style="margin-bottom:25px;font: normal 24px 'Manjari',
+  Helvetca,
+  Arial,
+  sans-serif;">Labor Management</h2>
+          <ul style="list-style: none;">
+            <li style="padding-bottom: 15px;">Centralize and streamline your labor cost management job with the lesser your effort but better your staff productivity
+            performance.</li>
+            <li>The function completely supports operation managers in order to achieve the cost target. Estimating workload demand will
+            be done automatically for a specific day in the future, then the actionable decisions will be suggested based on your
+            financial targets.
+            </li>
+          </ul>
+        </div>
+        <div id="row_1_img_2" class="row_1_img_hidden"> <img width="100%" height="100%"
+            src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_002.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+    <div class="consumer_content_details">
+      <div class="row_1">
+        <div id="row_1_img_3" class="row_1_img_hidden"> <img width="100%" height="100%"
+            src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_001.jpg"
+            alt="">
+        </div>
+        <div class="row_1-right" id="row_3">
+          <h2 style="margin-bottom: 25px;font: normal 24px 'Manjari',
+        Helvetca,
+        Arial,
+        sans-serif;">Food Cost Management</h2>
+          <ul style="list-style: none;">
+            <li style="padding-bottom: 15px;">There is no doubt that food cost control is a significant priority for any food and beverage operation. By using
+            cost-control technology, F&B managers can achieve the food cost target with minimal effort.</li>
+            <li>The system provides real-time monitoring and automatic recommendation in action with respect to fluctuate daily demand.
+            Our use cases shows that food cost has dropped more than 300,000$ after 12 months implementation.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="consumer_content_details">
+      <div class="row_1">
+        <div class="row_1-right" id="row_4">
+          <h2 style="margin-bottom:25px;font: normal 24px 'Manjari',
+      Helvetca,
+      Arial,
+      sans-serif;">Hotel Quality Management</h2>
+          <ul style="list-style: disc;">
+            <li style="padding-bottom: 15px; list-style: none;">Leverage data from OTA reviews and hotel available data, this function identifies the hotel’s issues and provides
+            actions based on what-if scenarios analysis to manage Guest Experiences, Hotel Quality & Reputation.</li>
+            
+          </ul>
+        </div>
+        <div id="row_1_img_4" class="row_1_img_hidden"> <img width="100%" height="100%"
+            src="https://secureservercdn.net/198.71.233.138/d0y.65e.myftpupload.com/wp-content/uploads/2019/09/hospitality_001.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <%- include('../partials/footer'); %>
 </body>
-<%- include('../partials/footer'); %>
+<script src="/js/consumer_lending.js"></script>
+
 </html>
