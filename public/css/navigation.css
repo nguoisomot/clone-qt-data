@@ -12,7 +12,12 @@ ul {
   top     : 0;
   width   : 100%;
 }
-
+.show-menu >span{
+  color: black;
+}
+.menu-services > li>a>span{
+  color: black;
+}
 .logo {
   display        : flex;
   justify-content: center;

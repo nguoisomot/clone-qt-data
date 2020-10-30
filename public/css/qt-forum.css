@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ /* .col-5{
+  background-color: #333 ;
+} */
+/* .d-flex:nth-child(2n){
+    background-color: #333;
+
+} */
+.muitile-menu{
+  margin-bottom: 0 !important;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}

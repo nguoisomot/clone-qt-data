@@ -54,6 +54,12 @@ app.get('/sale-ota',function(req,res){
 app.get('/tri_tue',function(req,res){
   res.render('pages/tri_tue');
 })
+app.get('/qt-forum',function(req,res){
+  res.render('pages/qt-forum');
+})
+app.get('/tradingsystem',function(req,res){
+  res.render('pages/trading_system');
+})
 //handle data
 
 require('./app/routers/user.router')(app);
